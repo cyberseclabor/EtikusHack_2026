@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sat Feb 28 18:20:54 2026 as: /usr/lib/nmap/nmap -p 80 -&#45;script http-enum,http-methods,http-headers,http-title -oA scriptHttp_1 192.168.56.254 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p 80 -&#45;script http-enum,http-methods,http-headers,http-title -oA scriptHttp_1 192.168.56.254" start="1772320854" startstr="Sat Feb 28 18:20:54 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.254" addrtype="ipv4"/>
+<address addr="08:00:27:4F:A5:85" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1772320854" endtime="1772320856"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.254" addrtype="ipv4"/>
+<address addr="08:00:27:4F:A5:85" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-headers" output="&#xa;  Date: Sat, 28 Feb 2026 23:00:16 GMT&#xa;  Server: Apache/2.2.8 (Ubuntu) DAV/2&#xa;  X-Powered-By: PHP/5.2.4-2ubuntu5.10&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="Metasploitable2 - Linux"><elem key="title">Metasploitable2 - Linux</elem>
+</script><script id="http-enum" output="&#xa;  /tikiwiki/: Tikiwiki&#xa;  /test/: Test page&#xa;  /phpinfo.php: Possible information file&#xa;  /phpMyAdmin/: phpMyAdmin&#xa;  /doc/: Potentially interesting directory w/ listing on &apos;apache/2.2.8 (ubuntu) dav/2&apos;&#xa;  /icons/: Potentially interesting folder w/ directory listing&#xa;  /index/: Potentially interesting folder&#xa;"/></port>
+</ports>
+<times srtt="742" rttvar="3807" to="100000"/>
+</host>
+<runstats><finished time="1772320856" timestr="Sat Feb 28 18:20:56 2026" summary="Nmap done at Sat Feb 28 18:20:56 2026; 1 IP address (1 host up) scanned in 2.55 seconds" elapsed="2.55" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sat Feb 28 18:20:54 2026 as: /usr/lib/nmap/nmap -p 80 --script http-enum,http-methods,http-headers,http-title -oA scriptHttp_1 192.168.56.254
+Host: 192.168.56.254 ()	Status: Up
+Host: 192.168.56.254 ()	Ports: 80/open/tcp//http///
+# Nmap done at Sat Feb 28 18:20:56 2026 -- 1 IP address (1 host up) scanned in 2.55 seconds

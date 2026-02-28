@@ -1,0 +1,28 @@
+# Nmap 7.98 scan initiated Sat Feb 28 18:20:54 2026 as: /usr/lib/nmap/nmap -p 80 --script http-enum,http-methods,http-headers,http-title -oA scriptHttp_1 192.168.56.254
+Nmap scan report for 192.168.56.254
+Host is up (0.00074s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-headers: 
+|   Date: Sat, 28 Feb 2026 23:00:16 GMT
+|   Server: Apache/2.2.8 (Ubuntu) DAV/2
+|   X-Powered-By: PHP/5.2.4-2ubuntu5.10
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: HEAD)
+|_http-title: Metasploitable2 - Linux
+| http-enum: 
+|   /tikiwiki/: Tikiwiki
+|   /test/: Test page
+|   /phpinfo.php: Possible information file
+|   /phpMyAdmin/: phpMyAdmin
+|   /doc/: Potentially interesting directory w/ listing on 'apache/2.2.8 (ubuntu) dav/2'
+|   /icons/: Potentially interesting folder w/ directory listing
+|_  /index/: Potentially interesting folder
+MAC Address: 08:00:27:4F:A5:85 (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Sat Feb 28 18:20:56 2026 -- 1 IP address (1 host up) scanned in 2.55 seconds
